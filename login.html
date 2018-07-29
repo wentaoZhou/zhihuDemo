@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<div class="login_page">
+    <span>在线作业提交平台</span>
+    <form id="login_form" class="form">
+        <input type="text" placeholder="用户名">
+        <input type="password" placeholder="密码">
+        <button type="button">登 录</button>
+        <div class="message">
+            <span>还没有账号？</span>
+            <button type="button" id="register">去注册</button>
+        </div>
+    </form>
+    <form id="register_form" class="form">
+        <input type="text" placeholder="用户名">
+        <input type="password" placeholder="密码">
+        <input type="password" placeholder="确认密码">
+        <input type="text" placeholder="邮箱">
+        <button type="button">创建账户</button>
+        <div class="message">
+            <span>已有账号？</span>
+            <button type="button" id="login">去登录</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    $("#register").click(function () {
+        $("#register_form").toggle(300);
+        $("#login_form").toggle(300);
+    })
+    $("#login").click(function () {
+        $("#register_form").toggle(300);
+        $("#login_form").toggle(300);
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+html body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #33800f;
+}
+.login_page{
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 45px;
+    /*border-box设置宽度为padding+border+content=width*/
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin: 10% auto;
+    text-align: center;
+}
+.form{
+    width: 100%;
+}
+.login_page input{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin:0 0 10px 0;
+    border: 0;
+    background-color: #f2f2f2;
+    outline: none;
+    font-size: 16px;
+}
+.login_page form>button{
+    width: 100%;
+    padding: 15px;
+    background-color: #0f8035;
+    outline: none;
+    border: 0;
+    color: #f2f2f2;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login_page>span{
+    margin:0 0 15px 0;
+    display: block;
+}
+.message{
+    font-size: 14px;
+}
+#register_form{
+    display: none;
+}
+.message button{
+    font-size: 14px;
+    background-color: transparent;
+    border: 0;
+    color: #33800f;
+    outline: none;
+    cursor: pointer;
+}
+.login_page form>button:hover,
+.login_page form>button:active{
+    background-color: #33800f;
+}
